@@ -55,7 +55,8 @@ def process_dir(top_dir, opts):
                 index_file.write(f"""<tr><td colspan="3"><a href="{dirname}/index.html">{dirname + '/'}</a></td></tr>""")
             process_dir(absolute_dir_path, opts)
 
-        for filename in sorted(files):
+        files_by_time = []
+        for filename in files:
             if opts.filter and not fnmatch.fnmatch(filename, opts.filter):
                 if opts.verbose:
                     print('SKIP: {}/{}'.format(parentdir, filename))
@@ -73,11 +74,15 @@ def process_dir(top_dir, opts):
                 size = int(os.path.getsize(os.path.join(parentdir, filename)))
 
                 if not opts.dryrun:
-                    index_file.write(
-    f"""<tr><td><a href="{filename}">{filename}</a></td><td>{datetime.datetime.utcfromtimestamp(time).isoformat()}</td><td><span class="size">{pretty_size(size)}</span></td></tr>""")
+                    dt = datetime.datetime.utcfromtimestamp(time)
+                    entry = f"""<tr><td><a href="{filename}">{filename}</a></td><td>{dt.isoformat()}</td><td><span class="size">{pretty_size(size)}</span></td></tr>"""
+                    files_by_time.append((dt, entry))
             except Exception as e:
                 print('ERROR writing file name:', e)
                 repr(filename)
+
+        for _, entry in sorted(files_by_time, key=lambda x: x[0], reverse=True):
+            index_file.write(entry)
 
         if not opts.dryrun:
             index_file.write("""
