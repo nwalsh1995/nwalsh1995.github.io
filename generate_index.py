@@ -12,18 +12,6 @@ import sys
 
 index_file_name = 'index.html'
 
-CSS = """<style>
-body {
-    background: #f4f4f4;
-    margin: 2em 1.5em;
-}
-.size {
-    float: right;
-    color: gray;
-}
-</style>
-"""
-
 
 def process_dir(top_dir, opts):
     for parentdir, dirs, files in os.walk(top_dir):
@@ -42,7 +30,7 @@ def process_dir(top_dir, opts):
                 write_prev_li = False
             index_file.write(f'''<!DOCTYPE html>
     <html>
-     <head>{CSS}</head>
+     <head></head>
      <body>
       <div>
       <h1>{os.path.basename(os.path.abspath(parentdir))}</h1>
