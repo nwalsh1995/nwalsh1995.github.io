@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from min_rss_gen.generator import start_rss, gen_item
 
 import xml.etree.ElementTree
@@ -10,8 +12,6 @@ rss_items = []
 
 for f in glob("**/*.html", recursive=True):
     path = PurePath(f)
-    print(path)
-    print(path.name)
     title = path.with_suffix("").name.replace("-", " ").title()
     rss_items.append(gen_item(title=title, link=f"{SITE}/{str(path)}"))
 
