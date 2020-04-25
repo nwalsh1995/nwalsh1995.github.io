@@ -4,16 +4,16 @@ from min_rss_gen.generator import start_rss, gen_item
 
 import xml.etree.ElementTree
 from glob import glob
-from pathlib import PurePath
+from pathlib import Path
 
 SITE = "https://nwalsh1995.github.io"
 RSS_FILENAME = "rss.xml"
 rss_items = []
 
 for f in glob("**/*.html", recursive=True):
-    path = PurePath(f)
+    path = Path(f)
     title = path.with_suffix("").name.replace("-", " ").title()
-    rss_items.append(gen_item(title=title, link=f"{SITE}/{str(path)}"))
+    rss_items.append(gen_item(title=title, link=f"{SITE}/{str(path)}", description=path.read_text()))
 
 rss_xml_element = start_rss(title="nwalsh1995.github.io", link="nwalsh1995.github.io", description="A collection of thoughts.", items=rss_items)
 
