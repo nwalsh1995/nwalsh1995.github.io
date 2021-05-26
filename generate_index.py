@@ -26,7 +26,7 @@ def process_dir(top_dir, opts):
                 print('cannot create file %s %s' % (abs_path, e))
                 continue
             write_prev_li = True
-            if parentdir == "/home/nwalsh/blog/":
+            if parentdir == "/home/nwalsh/blog":
                 write_prev_li = False
             index_file.write(f'''<!DOCTYPE html>
     <html>
@@ -34,7 +34,7 @@ def process_dir(top_dir, opts):
      <body>
       <div>
       <h1>{os.path.basename(os.path.abspath(parentdir))}</h1>
-       <table>
+       <table cellspacing="15">
         <thead><tr><th>name</th><th>date</th><th>size</th></tr><thead>
         <tbody>
            {'<tr><td colspan="3"><a href="../index.html">..</a></td></tr>' if write_prev_li else ''}''')
