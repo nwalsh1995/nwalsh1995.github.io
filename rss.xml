@@ -7,7 +7,7 @@
        &lt;table&gt;
         &lt;thead&gt;&lt;tr&gt;&lt;th&gt;name&lt;/th&gt;&lt;th&gt;date&lt;/th&gt;&lt;th&gt;size&lt;/th&gt;&lt;/tr&gt;&lt;thead&gt;
         &lt;tbody&gt;
-           &lt;tr&gt;&lt;td&gt;&lt;a href="rss.html"&gt;rss.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2020-04-13T05:32:31.809984&lt;/td&gt;&lt;td&gt;&lt;span class="size"&gt;571 bytes&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="15-min-per-day.html"&gt;15-min-per-day.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2020-03-24T05:36:08.543258&lt;/td&gt;&lt;td&gt;&lt;span class="size"&gt;1 KB&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="how-hard-could-it-be.html"&gt;how-hard-could-it-be.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2020-03-24T05:36:08.543258&lt;/td&gt;&lt;td&gt;&lt;span class="size"&gt;1 KB&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+           &lt;tr&gt;&lt;td&gt;&lt;a href="tools-for-humans.html"&gt;tools-for-humans.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2021-05-26T03:25:52.163243&lt;/td&gt;&lt;td&gt;&lt;span class="size"&gt;2 KB&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="rss.html"&gt;rss.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2020-04-13T05:32:31.809984&lt;/td&gt;&lt;td&gt;&lt;span class="size"&gt;571 bytes&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="15-min-per-day.html"&gt;15-min-per-day.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2020-03-24T05:36:08.543258&lt;/td&gt;&lt;td&gt;&lt;span class="size"&gt;1 KB&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="how-hard-could-it-be.html"&gt;how-hard-could-it-be.html&lt;/a&gt;&lt;/td&gt;&lt;td&gt;2020-03-24T05:36:08.543258&lt;/td&gt;&lt;td&gt;&lt;span class="size"&gt;1 KB&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
   &lt;/tbody&gt;&lt;/table&gt;
   &lt;/div&gt;
  &lt;/body&gt;
@@ -36,6 +36,23 @@ Since implementing and following such a rule, I constantly find myself sinking m
 &lt;br/&gt;
 &lt;br/&gt;
 From my results of obeying such a rule, it seems that the biggest problem I had was resuming work on the project. In my head there were a lot of moving pieces that were very complex, and the simplest approach was to avoid them. However, once beginning the project I was able to focus on getting the most out of the 15 minutes that were to be spent, which allowed me to think differently about the problems I was facing, and just try to get something working. Often, I would come to a solution that I found acceptable, and I was able to obtain the sense of progression that I was looking for.
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description></item><item><title>Tools For Humans</title><link>https://nwalsh1995.github.io/tools-for-humans.html</link><description>&lt;html&gt;
+&lt;body&gt;
+&lt;h1&gt;tools for humans&lt;/h1&gt;
+&lt;p&gt;
+My idea of the perfect tool is one that I can use to get the job done as efficiently and pleasantly as possible. That is to say it is something that can be used to fulfill a specific task. For instance, would you keep using and carrying around a shovel after you have finished digging a hole? Why would you ever return to use a shovel? Presumably because you have another hole to dig and thus a need.
+&lt;/p&gt;
+&lt;p&gt;
+Digital services have a huge advantage over physical items. Consider a physical book, if the author could watch their readers (while they are reading the book) then the author could determine where readers decided not to finish. This data allows for the author to iterate, change the troublesome section with something more appealing gain readership. If more people finish the book they are more likely to recommend it, increasing popularity and ultimately lead to more readers. This leads us to a distinction: physical items require third party observation for usage information, digital services do not.
+&lt;/p&gt;
+&lt;p&gt;
+In relation to a shovel, the most popular websites are optimized for attention and increasing the users time of 'eyes on screen'. Some tech business models spring to mind which rely on captivating the user: advertisments (the dominant business model of Google, Facebook, Twitter), microtransacations (the dominant business model of 'free-to-play' games like Fortnite), content consumption (Netflix, Amazon Prime Video, Disney+, many other streaming services). Digital services collect data automatically; without an observer. With the data in hand, experiments are created, tested, and measured against key metrics (like active time on screen or session length). Digital services evolve quicker and back propagate against their optimization function. 
+&lt;/p&gt;
+&lt;p&gt;
+Then, consider the question: does time spent using a tool imply its value? Trivially, the answer is no. Shovel A takes me 30 minutes to finish digging a hole while shovel B takes me an hour. I prefer shovel A to lessen the amount of work required. So, if time spent using a tool does not imply value then how can we determine the amount of value digital services provide? I leave this post as an open question as I find the answer to be subjective. Do your tools work for you?
 &lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
